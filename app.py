@@ -11,7 +11,7 @@ from nltk.corpus import stopwords
 import nltk
 from nltk.stem.porter import PorterStemmer
 
-nltk.download('punkt', download_dir='./nltk_data')
+nltk.download('punkt_tab')
 
 ps = PorterStemmer()
 
