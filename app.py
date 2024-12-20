@@ -11,7 +11,13 @@ from nltk.corpus import stopwords
 import nltk
 from nltk.stem.porter import PorterStemmer
 
-nltk.download('punkt_tab')
+from nltk.data import find
+
+try:
+    find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+
 
 ps = PorterStemmer()
 
